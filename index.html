@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Solicitação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cadastro de Solicitação</h1>
+    <form action="enviar.php" method="POST">
+        <label for="nome">Nome do Solicitante:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="cargo">Cargo do Solicitante:</label>
+        <input type="text" id="cargo" name="cargo" required>
+
+        <label for="empresa">Nome da Empresa:</label>
+        <input type="text" id="empresa" name="empresa" required>
+
+        <label for="cnpj">CNPJ:</label>
+        <input type="text" id="cnpj" name="cnpj" required>
+
+        <label for="setor">Setor/Área de Solicitação:</label>
+        <input type="text" id="setor" name="setor" required>
+
+        <label for="telefone">Telefone de Contato:</label>
+        <input type="text" id="telefone" name="telefone" required>
+
+        <label for="email">E-mail do Solicitante:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="data">Data da Solicitação:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="urgencia">Urgência da Solicitação:</label>
+        <select id="urgencia" name="urgencia" required>
+            <option value="baixa">Baixa</option>
+            <option value="media">Média</option>
+            <option value="alta">Alta</option>
+        </select>
+
+        <label for="observacoes">Observações Adicionais:</label>
+        <textarea id="observacoes" name="observacoes"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+          </html>
